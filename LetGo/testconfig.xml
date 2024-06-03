@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<conf>
+    <init_case name="init">
+        <acount name="acountID" type="QQ/wechat" value="306754015"> </acount>
+        <pwd name="pwd" type="string" value="None"> </pwd>
+        <action name="Action.3" type="table">
+            <Cmd name="cmd" type="string" value="Click"/>
+            <Cmdtype name="Cmdtype" type="ocr" value="Click"/>
+			<FindText name="text" type="string" value="Alert"/>
+            <ClickText name="text" type="string" value="OK"/>
+            <Timeout name="timeout" type="int" value="20"/>
+			<SParam name="SParam" type="string" value="none"/>
+        </action>
+    </init_case>
+
+    <testcase name="case">
+        <action name="Action.3" type="table">
+            <Cmd name="cmd" type="string" value="Click"/>
+            <Cmdtype name="Cmdtype" type="ocr" value="Click"/>
+			<Text name="text" type="string" value="同意"/>
+            <Timeout name="timeout" type="int" value="20"/>
+			<SParam name="SParam" type="string" value="none"/>
+        </action>
+    </testcase>
+</conf>
